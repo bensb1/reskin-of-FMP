@@ -12,13 +12,34 @@ public class frog : MonoBehaviour
     private bool facingleft = true;
     private Collider2D coll;
     private Rigidbody2D rb;
+    private Animator anim;
 
     private void Start()
     {
         coll = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
     private void Update()
+    {
+        //tranisiton from jump to fall
+        if (anim.GetBool("Jumping"))
+        {
+            if(rb.velocity.y < .1)
+            {
+                anim.SetBool("Falling", true);
+                anim.SetBool("Jumping",false);
+            }
+        }
+
+        //tranisiton for fall to idle
+        if(coll.IsTouchingLayers(ground)&& anim.GetBool("Falling"))
+        {
+            anim.SetBool("Falling", false);
+        }
+    }
+
+    private void Move()
     {
         if (facingleft)
         {
@@ -34,6 +55,7 @@ public class frog : MonoBehaviour
                 {
 
                     rb.velocity = new Vector2(-jumpLength, jumpHeight);
+                    anim.SetBool("Jumping", true); 
 
                 }
             }
@@ -56,6 +78,7 @@ public class frog : MonoBehaviour
                 {
 
                     rb.velocity = new Vector2(jumpLength, jumpHeight);
+                    anim.SetBool("Jumping", true);
 
                 }
             }
