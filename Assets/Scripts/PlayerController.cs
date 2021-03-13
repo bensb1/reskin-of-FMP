@@ -52,11 +52,13 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "enemy" )
+        if (other.gameObject.tag == "enemy")
+          
         {
-            if(state == State.falling)
+            Enemy enemy = other.gameObject.GetComponent<Enemy>();
+            if (state == State.falling)
             {
-                Destroy(other.gameObject);
+                enemy.JumpedOn();
                 Jump();
             }
             else
