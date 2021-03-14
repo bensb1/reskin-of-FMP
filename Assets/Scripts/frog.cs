@@ -11,15 +11,15 @@ public class frog : Enemy
     [SerializeField] private float jumpHeight = 15f;
     private bool facingleft = true;
     private Collider2D coll;
-    private Rigidbody2D rb;
+   
     
 
     protected override void Start()
     {
         base.Start();
         coll = GetComponent<Collider2D>();
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        
+        
     }
     private void Update()
     {
