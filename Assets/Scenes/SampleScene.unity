@@ -578,7 +578,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -593,17 +593,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 25, y: 52.5}
+    - - {x: 60.73334, y: 38.384697}
       - {x: -10.555477, y: 38.456905}
       - {x: -10.652113, y: -5.744644}
-      - {x: 37.084568, y: -5.7446423}
-      - {x: 63.77588, y: 32.45523}
---- !u!19719996 &444610768 stripped
-TilemapCollider2D:
-  m_CorrespondingSourceObject: {fileID: 5893853198347962941, guid: bc018987c0f4ff840a7cb9f74db26af9,
-    type: 3}
-  m_PrefabInstance: {fileID: 5893853199137156092}
-  m_PrefabAsset: {fileID: 0}
+      - {x: 61.709614, y: -5.924385}
 --- !u!4 &480613841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4735708211797480057, guid: 171efdea4b98ce94aaa115b437524fc2,
@@ -702,7 +695,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000071525574, y: 6.5699997, z: -10}
+  m_LocalPosition: {x: 0.2805817, y: 6.569389, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1364,7 +1357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 444610768}
+  m_BoundingShape2D: {fileID: 373257023}
   m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!1 &1388431887
