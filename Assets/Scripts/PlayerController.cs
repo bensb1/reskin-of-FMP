@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Collider2D coll;
-    private AudioSource footstep;
+    
     
 
     //Inspector variables
@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int cherries = 0;
     [SerializeField] private Text cherriesText;
     [SerializeField] private float hurtForce = 10f;
+    [SerializeField] private AudioSource cherry;
+    [SerializeField]private AudioSource footstep;
     //FSM
     private enum State { idle,running,Jumping,falling, hurt}
     private State state = State.idle;
@@ -30,7 +32,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
-        footstep = GetComponent<AudioSource>();
+        
+        
 
     }
     private void Update()
@@ -47,6 +50,7 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.tag == "collectable")
         {
+            cherry.Play();
             Destroy(collision.gameObject);
             cherries += 1;
             cherriesText.text = cherries.ToString();
