@@ -56,6 +56,13 @@ public class PlayerController : MonoBehaviour
             cherries += 1;
             cherriesText.text = cherries.ToString();
         }
+        if(collision.tag =="PowerUp")
+        {
+            Destroy(collision.gameObject);
+            jumpForce = 17.5f;
+            GetComponent<SpriteRenderer>().color = Color.yellow;
+            StartCoroutine(resetPower());
+        }
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -148,6 +155,12 @@ public class PlayerController : MonoBehaviour
     private void Footstep()
     {
         footstep.Play();
+    }
+    private IEnumerator resetPower()
+    {
+        yield return new WaitForSeconds(10);
+        jumpForce = 10;
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 }
 
