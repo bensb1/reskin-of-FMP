@@ -15,6 +15,9 @@ public class PermanenttUI : MonoBehaviour
     public static PermanenttUI perm;
     private void Start()
     {
+        DontDestroyOnLoad(gameObject);
+
+        //singleton
         if(!perm)
         {
             perm = this;

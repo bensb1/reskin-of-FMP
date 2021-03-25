@@ -1303,7 +1303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f2340301668c548ac5c4a7e93bdbce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: TheEnd
+  sceneName: Second level
 --- !u!1001 &1074661280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5410,3 +5410,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4d143974448904a95e3f18f9b6ba3d, type: 3}
+--- !u!1 &7488076533406528517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7488076533511745884, guid: 2a4d143974448904a95e3f18f9b6ba3d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7488076533406528516}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7488076533406528518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7488076533406528517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b40c191c8ce290a43a10e64f0b9de400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cherries: 0
+  health: 0
+  healthAmount: {fileID: 662983778}
+  cherriesText: {fileID: 453695312}
