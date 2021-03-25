@@ -27,4 +27,9 @@ public class PermanenttUI : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public void Reset()
+    {
+        cherries = 0;
+        cherriesText.text = cherries.ToString();
+    }
 }
