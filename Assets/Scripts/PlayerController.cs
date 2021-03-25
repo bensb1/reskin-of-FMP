@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
-        healthAmount.text = health.ToString();
+         PermanenttUI.perm.healthAmount.text = PermanenttUI.perm.health.ToString();
 
         
         
@@ -58,8 +58,8 @@ public class PlayerController : MonoBehaviour
         {
             cherry.Play();
             Destroy(collision.gameObject);
-            cherries += 1;
-            cherriesText.text = cherries.ToString();
+            PermanenttUI.perm.cherries += 1;
+            PermanenttUI.perm.cherriesText.text = PermanenttUI.perm.cherries.ToString();
         }
         if(collision.tag =="PowerUp")
         {
@@ -101,9 +101,9 @@ public class PlayerController : MonoBehaviour
 
     private void HandleHealth()
     {
-        health -= 1;
-        healthAmount.text = health.ToString();
-        if (health <= 0)
+        PermanenttUI.perm.health -= 1;
+        PermanenttUI.perm.healthAmount.text = PermanenttUI.perm.health.ToString();
+        if (PermanenttUI.perm.health <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
