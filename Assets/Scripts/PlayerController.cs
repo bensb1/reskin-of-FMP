@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]private AudioSource footstep;
     [SerializeField] private int health;
     [SerializeField] private Text healthAmount;
+    [SerializeField] private int coins = 0;
     //FSM
     private enum State { idle,running,Jumping,falling, hurt}
     private State state = State.idle;
@@ -60,6 +61,7 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
             PermanenttUI.perm.cherries += 1;
             PermanenttUI.perm.cherriesText.text = PermanenttUI.perm.cherries.ToString();
+            coins += 1;
         }
         if(collision.tag =="PowerUp")
         {
