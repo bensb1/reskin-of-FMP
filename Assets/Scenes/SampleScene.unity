@@ -7785,6 +7785,16 @@ PrefabInstance:
       propertyPath: m_CompositePaths.m_Paths.Array.data[8].Array.data[3].y
       value: -1.985
       objectReference: {fileID: 0}
+    - target: {fileID: 5893853198347962947, guid: bc018987c0f4ff840a7cb9f74db26af9,
+        type: 3}
+      propertyPath: m_ChunkCullingBounds.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5893853198347962947, guid: bc018987c0f4ff840a7cb9f74db26af9,
+        type: 3}
+      propertyPath: m_ChunkCullingBounds.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc018987c0f4ff840a7cb9f74db26af9, type: 3}
 --- !u!1001 &7488076533406528516
@@ -7935,6 +7945,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cherries: 0
-  health: 0
+  health: 5
   healthAmount: {fileID: 662983778}
   cherriesText: {fileID: 453695312}

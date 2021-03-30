@@ -13,7 +13,7 @@ public class PermanenttUI : MonoBehaviour
     public  TextMeshProUGUI cherriesText;
 
     public static PermanenttUI perm;
-    private void Start()
+    private void Awake()
     {
         DontDestroyOnLoad(gameObject);
 
