@@ -62,6 +62,8 @@ public class PlayerController : MonoBehaviour
             PermanenttUI.perm.cherries += 1;
             PermanenttUI.perm.cherriesText.text = PermanenttUI.perm.cherries.ToString();
             coins += 1;
+            PermanenttUI.perm.coins += 1;
+            PermanenttUI.perm.coinsText.text = PermanenttUI.perm.coins.ToString();
         }
         if(collision.tag =="PowerUp")
         {

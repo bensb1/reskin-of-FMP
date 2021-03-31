@@ -10410,11 +10410,11 @@ RectTransform:
   m_Father: {fileID: 2142770757}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -134, y: 137}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 377.00003, y: -33.679993}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5000003, y: 0.5}
 --- !u!114 &1953798684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10834,6 +10834,8 @@ MonoBehaviour:
   health: 5
   healthAmount: {fileID: 1357659300}
   cherriesText: {fileID: 1787731912}
+  coins: 0
+  coinsText: {fileID: 2033144474}
 --- !u!224 &2142770757 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7488076533511745880, guid: 2a4d143974448904a95e3f18f9b6ba3d,

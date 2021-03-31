@@ -11,6 +11,8 @@ public class PermanenttUI : MonoBehaviour
    public int health;
      public  Text healthAmount;
     public  TextMeshProUGUI cherriesText;
+    public int coins = 0;
+    public TextMeshProUGUI coinsText;
 
     public static PermanenttUI perm;
     private void Awake()
