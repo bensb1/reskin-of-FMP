@@ -21,7 +21,7 @@ public class lava : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-
+            PermanenttUI.perm.Reset();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
