@@ -7,10 +7,10 @@ using TMPro;
 public class PermanenttUI : MonoBehaviour
 {
     //player stats
-    public int cherries = 0;
+   
    public int health;
      public  Text healthAmount;
-    public  TextMeshProUGUI cherriesText;
+    
     public int coins = 0;
     public TextMeshProUGUI coinsText;
 
@@ -31,7 +31,9 @@ public class PermanenttUI : MonoBehaviour
     }
     public void Reset()
     {
-        cherries = 0;
-        cherriesText.text = cherries.ToString();
+       
+        coins = 0;
+        
+       coinsText.text = coins.ToString();
     }
 }

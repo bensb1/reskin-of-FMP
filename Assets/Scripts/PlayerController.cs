@@ -18,10 +18,10 @@ public class PlayerController : MonoBehaviour
      [SerializeField]private LayerMask ground;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpForce = 10f;
-    [SerializeField] private int cherries = 0;
-    [SerializeField] private TextMeshProUGUI cherriesText;
+    
+    
     [SerializeField] private float hurtForce = 10f;
-    [SerializeField] private AudioSource cherry;
+    
     [SerializeField]private AudioSource footstep;
     [SerializeField] private int health;
     [SerializeField] private Text healthAmount;
@@ -57,10 +57,10 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.tag == "collectable")
         {
-            cherry.Play();
+            
             Destroy(collision.gameObject);
-            PermanenttUI.perm.cherries += 1;
-            PermanenttUI.perm.cherriesText.text = PermanenttUI.perm.cherries.ToString();
+            
+
             coins += 1;
             PermanenttUI.perm.coins += 1;
             PermanenttUI.perm.coinsText.text = PermanenttUI.perm.coins.ToString();
