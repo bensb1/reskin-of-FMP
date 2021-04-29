@@ -23,17 +23,18 @@ public class lava : MonoBehaviour
         {
             PermanenttUI.perm.health -= 1;
             PermanenttUI.perm.healthAmount.text = PermanenttUI.perm.health.ToString();
-           
-            }
+
+
             PermanenttUI.perm.Reset();
-        if (PermanenttUI.perm.health > 0)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-        else if (PermanenttUI.perm.health <= 0)
+            if (PermanenttUI.perm.health > 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (PermanenttUI.perm.health <= 0)
             {
                 SceneManager.LoadScene("first level");
                 PermanenttUI.perm.health = 5;
             }
+        }
     }
 }
