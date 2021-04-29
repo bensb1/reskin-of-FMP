@@ -109,7 +109,8 @@ public class PlayerController : MonoBehaviour
         PermanenttUI.perm.healthAmount.text = PermanenttUI.perm.health.ToString();
         if (PermanenttUI.perm.health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("first level");
+            PermanenttUI.perm.health = 5;
         }
     }
 
