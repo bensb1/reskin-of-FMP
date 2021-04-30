@@ -133,7 +133,7 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector2(-1, 1);
             if (timer > waitTimer)
             {
-                Debug.Log(timer);
+                
                 oxygenBar.instance.UseOxygen(1);
                 timer = 0;
             }
@@ -147,7 +147,7 @@ public class PlayerController : MonoBehaviour
             if (timer > waitTimer)
             {
 
-                Debug.Log(timer);
+                
                 oxygenBar.instance.UseOxygen(1);
                 timer = 0;
             }
