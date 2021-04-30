@@ -20,6 +20,15 @@ public class oxygenBar : MonoBehaviour
         Oxygenbar.maxValue = maxOxygen;
         Oxygenbar.value = maxOxygen;
     }
+    public void UseOxygen(int amount)
+    {
+        if (currentOxygen - amount >= 0)
+        {
+            currentOxygen -= amount;
+            Oxygenbar.value = currentOxygen;
+        }
+        else Debug.Log(" not enough oxygen");
+    }
 
 
 }
