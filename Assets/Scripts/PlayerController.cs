@@ -26,7 +26,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int health;
     [SerializeField] private Text healthAmount;
     [SerializeField] private int coins = 0;
-
+    private float timer = 0f;
+    private float waitTimer =2f;
     //FSM
     private enum State { idle,running,Jumping,falling, hurt}
     private State state = State.idle;
@@ -46,7 +47,9 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-        if(state != State.hurt)
+        timer += Time.deltaTime;
+
+        if (state != State.hurt)
         {
             Movement();
         }
@@ -119,13 +122,21 @@ public class PlayerController : MonoBehaviour
     {
         //Moving left
         float hDirection = Input.GetAxis("Horizontal");
+
+
+       
+       
         
         if (hDirection < 0)
         {
             rb.velocity = new Vector2(-speed, rb.velocity.y);
             transform.localScale = new Vector2(-1, 1);
-
-            oxygenBar.instance.UseOxygen(1);
+            if (timer > waitTimer)
+            {
+                Debug.Log(timer);
+                oxygenBar.instance.UseOxygen(1);
+                timer = 0;
+            }
 
         }
         //Moving right
@@ -133,7 +144,14 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(speed, rb.velocity.y);
             transform.localScale = new Vector2(1, 1);
-            oxygenBar.instance.UseOxygen(1);
+            if (timer > waitTimer)
+            {
+
+                Debug.Log(timer);
+                oxygenBar.instance.UseOxygen(1);
+                timer = 0;
+            }
+
         }
 
         if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(ground))
