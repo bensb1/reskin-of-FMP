@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
         }
         
         AnimationState();
-        anim.SetInteger("State", (int)state); //sets anitmation based on enuemrator state
+        anim.SetInteger("State", (int)state); //sets animation based on enuemrator state
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(collision.gameObject);
             jumpForce = 17.5f;
-            GetComponent<SpriteRenderer>().color = Color.yellow;
+            GetComponent<SpriteRenderer>().color = Color.red;
             StartCoroutine(resetPower());
         }
     }
@@ -134,7 +134,7 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector2(-1, 1);
             if (timer > waitTimer)
             {
-
+                Debug.Log(timer);
                 oxygenBar.UseOxygen(1);
                 timer = 0;
             }
