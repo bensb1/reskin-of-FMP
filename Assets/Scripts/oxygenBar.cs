@@ -27,8 +27,10 @@ public class oxygenBar : MonoBehaviour
             currentOxygen -= amount;
             Oxygenbar.value = currentOxygen;
         }
-        else Debug.Log(" not enough oxygen");
+        else if (currentOxygen - amount <= 0)
+        {
+            Debug.Log(" not enough oxygen");
+        }
     }
-
 
 }
