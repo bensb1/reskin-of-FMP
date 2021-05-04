@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     private enum State { idle,running,Jumping,falling, hurt}
     private State state = State.idle;
     private OxygenBar oxygenBar;
+    
 
 
     private void Start()

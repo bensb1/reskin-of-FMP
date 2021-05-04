@@ -4527,6 +4527,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1632617147}
+--- !u!1 &1305017321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8814821525280409964, guid: 04cc883e104a48343b351ac9f43c7ae3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8814821523681545173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1305017327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305017321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a270505d9f33bee4e8d41aa06466e135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Oxygenbar: {fileID: 1397939940}
 --- !u!114 &1357659300 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3941140118171473844, guid: 05633c3b7487f5d4594876b67dde02e3,
