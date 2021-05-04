@@ -3,17 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class oxygenBar : MonoBehaviour
+public class OxygenBar : MonoBehaviour
 {
     public Slider Oxygenbar;
     private int maxOxygen = 100;
     private int currentOxygen;
-    public static oxygenBar instance;
-    private void Awake()
-    {
-        instance = this;
-    }
-
+    
+  
     void Start()
     {
         currentOxygen = maxOxygen;

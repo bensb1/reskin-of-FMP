@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     //FSM
     private enum State { idle,running,Jumping,falling, hurt}
     private State state = State.idle;
-
+    private OxygenBar oxygenBar;
 
 
     private void Start()
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
          PermanenttUI.perm.healthAmount.text = PermanenttUI.perm.health.ToString();
-
+        oxygenBar = GetComponent<OxygenBar>();
         
         
 
@@ -133,8 +133,8 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector2(-1, 1);
             if (timer > waitTimer)
             {
-                
-                oxygenBar.instance.UseOxygen(1);
+
+                oxygenBar.UseOxygen(1);
                 timer = 0;
             }
 
@@ -148,7 +148,7 @@ public class PlayerController : MonoBehaviour
             {
 
                 
-                oxygenBar.instance.UseOxygen(1);
+                oxygenBar.UseOxygen(1);
                 timer = 0;
             }
 
