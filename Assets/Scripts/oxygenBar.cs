@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -29,11 +30,11 @@ public class OxygenBar : MonoBehaviour
         {
             Debug.Log(" not enough oxygen");
         }
+      
     }
-    private void Reset()
-    {
-        
-    }
-    
 
+    internal void ResetOxygen()
+    {
+        slider.value = maxOxygen;
+    }
 }

@@ -116,6 +116,10 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene("first level");
             PermanenttUI.perm.health = 5;
+
+            oxygenBar.ResetOxygen();
+                
+            
         }
     }
 
