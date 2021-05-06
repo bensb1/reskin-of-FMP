@@ -15,6 +15,7 @@ public class PermanenttUI : MonoBehaviour
     public TextMeshProUGUI coinsText;
 
     public static PermanenttUI perm;
+    
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -35,5 +36,6 @@ public class PermanenttUI : MonoBehaviour
         coins = 0;
         
        coinsText.text = coins.ToString();
+        
     }
 }

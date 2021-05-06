@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class OxygenBar : MonoBehaviour
 {
-    public Slider Oxygenbar;
+    public Slider slider;
     private int maxOxygen = 100;
     private int currentOxygen;
     
@@ -13,20 +13,27 @@ public class OxygenBar : MonoBehaviour
     void Start()
     {
         currentOxygen = maxOxygen;
-        Oxygenbar.maxValue = maxOxygen;
-        Oxygenbar.value = maxOxygen;
+        slider.maxValue = maxOxygen;
+        slider.value = maxOxygen;
     }
+    
+    
     public void UseOxygen(int amount)
     {
         if (currentOxygen - amount >= 0)
         {
             currentOxygen -= amount;
-            Oxygenbar.value = currentOxygen;
+            slider.value = currentOxygen;
         }
         else if (currentOxygen - amount <= 0)
         {
             Debug.Log(" not enough oxygen");
         }
     }
+    private void Reset()
+    {
+        
+    }
+    
 
 }

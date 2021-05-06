@@ -29,6 +29,7 @@ public class lava : MonoBehaviour
             if (PermanenttUI.perm.health > 0)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                
             }
             else if (PermanenttUI.perm.health <= 0)
             {

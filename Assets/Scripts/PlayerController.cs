@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
          PermanenttUI.perm.healthAmount.text = PermanenttUI.perm.health.ToString();
-        oxygenBar = GetComponent<OxygenBar>();
+        oxygenBar = GameObject.Find("oxygenBar").GetComponent<OxygenBar>();
         
         
 
@@ -135,7 +135,8 @@ public class PlayerController : MonoBehaviour
             if (timer > waitTimer)
             {
                 Debug.Log(timer);
-                oxygenBar.UseOxygen(1);
+                oxygenBar.UseOxygen(15);
+               
                 timer = 0;
             }
 
@@ -149,7 +150,7 @@ public class PlayerController : MonoBehaviour
             {
 
                 
-                oxygenBar.UseOxygen(1);
+                oxygenBar.UseOxygen(15);
                 timer = 0;
             }
 
@@ -209,5 +210,6 @@ public class PlayerController : MonoBehaviour
         jumpForce = 10;
         GetComponent<SpriteRenderer>().color = Color.white;
     }
+
 }
 
