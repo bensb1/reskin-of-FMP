@@ -139,7 +139,7 @@ public class PlayerController : MonoBehaviour
             if (timer > waitTimer)
             {
                 Debug.Log(timer);
-                oxygenBar.UseOxygen(15);
+                oxygenBar.UseOxygen(1);
                
                 timer = 0;
             }
@@ -154,7 +154,7 @@ public class PlayerController : MonoBehaviour
             {
 
                 
-                oxygenBar.UseOxygen(15);
+                oxygenBar.UseOxygen(1);
                 timer = 0;
             }
 
