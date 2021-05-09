@@ -127,6 +127,7 @@ public class PlayerController : MonoBehaviour
     {
         //Moving left
         float hDirection = Input.GetAxis("Horizontal");
+        
 
 
        
@@ -150,6 +151,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(speed, rb.velocity.y);
             transform.localScale = new Vector2(1, 1);
+            Footstep();
             if (timer > waitTimer)
             {
 
