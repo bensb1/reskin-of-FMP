@@ -28,12 +28,16 @@ public class lava : MonoBehaviour
             PermanenttUI.perm.Reset();
             if (PermanenttUI.perm.health > 0)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+               
+                if (SceneManager.GetActiveScene().name != "FirstLevel")
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                }
                 
             }
             else if (PermanenttUI.perm.health <= 0)
             {
-                SceneManager.LoadScene("first level");
+                SceneManager.LoadScene("FirstLevel");
                 PermanenttUI.perm.health = 5;
             }
         }
