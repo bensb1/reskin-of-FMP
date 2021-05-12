@@ -5,7 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class lava : MonoBehaviour
 {
+    private bool alreadyDamaged;
+
     public float speed = 5f;
+    private void Awake()
+    {
+       alreadyDamaged = false; 
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +27,7 @@ public class lava : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            PermanenttUI.perm.health -= 1;
+            if (!alreadyDamaged) { PermanenttUI.perm.health -= 1; alreadyDamaged = true; }
             PermanenttUI.perm.healthAmount.text = PermanenttUI.perm.health.ToString();
 
 
