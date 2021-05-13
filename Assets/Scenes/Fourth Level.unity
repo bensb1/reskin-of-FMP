@@ -2547,7 +2547,7 @@ PrefabInstance:
     - target: {fileID: 9060076237771314371, guid: 5fdc555ea3201d7489553d061724b524,
         type: 3}
       propertyPath: sceneName
-      value: Fifth Level
+      value: FifthLevel
       objectReference: {fileID: 0}
     - target: {fileID: 9060076237771314372, guid: 5fdc555ea3201d7489553d061724b524,
         type: 3}
