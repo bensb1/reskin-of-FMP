@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
         PermanenttUI.perm.healthAmount.text = PermanenttUI.perm.health.ToString();
         if (PermanenttUI.perm.health <= 0)
         {
-            SceneManager.LoadScene("first level");
+            SceneManager.LoadScene("FirstLevel");
             PermanenttUI.perm.health = 5;
 
             oxygenBar.ResetOxygen();
