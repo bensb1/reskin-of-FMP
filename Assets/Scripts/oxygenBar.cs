@@ -11,14 +11,26 @@ public class OxygenBar : MonoBehaviour
     private int currentOxygen;
     
   
-    void Start()
+  void Start()
     {
         currentOxygen = maxOxygen;
         slider.maxValue = maxOxygen;
         slider.value = maxOxygen;
+
     }
-    
-    
+
+    public void OxygenReset()
+    {
+        
+        currentOxygen = maxOxygen;
+        slider.maxValue = maxOxygen;
+        slider.value = maxOxygen;
+        
+
+
+    }
+
+
     public void UseOxygen(int amount)
     {
         if (currentOxygen - amount >= 0)

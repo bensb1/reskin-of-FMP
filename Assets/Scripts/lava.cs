@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class lava : MonoBehaviour
 {
     private bool alreadyDamaged;
+    private OxygenBar oxygenBar;
 
     public float speed = 5f;
     private void Awake()
@@ -15,7 +16,7 @@ public class lava : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        oxygenBar = GameObject.Find("oxygenBar").GetComponent<OxygenBar>();
     }
 
     // Update is called once per frame
@@ -35,10 +36,12 @@ public class lava : MonoBehaviour
             if (PermanenttUI.perm.health > 0)
             {
                
-                if (SceneManager.GetActiveScene().name != "FirstLevel")
-                {
+               
+                
+                    
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                }
+                    oxygenBar.ResetOxygen();
+                
                 
             }
             else if (PermanenttUI.perm.health <= 0)
