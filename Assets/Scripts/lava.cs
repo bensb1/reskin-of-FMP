@@ -28,7 +28,10 @@ public class lava : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (!alreadyDamaged) { PermanenttUI.perm.health -= 1; alreadyDamaged = true; }
+            if (!alreadyDamaged)
+            {
+                PermanenttUI.perm.health -= 1; alreadyDamaged = true;
+            }
             PermanenttUI.perm.healthAmount.text = PermanenttUI.perm.health.ToString();
 
 
