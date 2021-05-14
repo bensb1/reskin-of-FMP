@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     private enum State { idle,running,Jumping,falling, hurt}
     private State state = State.idle;
     private OxygenBar oxygenBar;
+    private GameObject oxygenTank;
     
 
 
@@ -40,6 +41,9 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
+        oxygenTank = GetComponent<GameObject>();
+        
+
          PermanenttUI.perm.healthAmount.text = PermanenttUI.perm.health.ToString();
         oxygenBar = GameObject.Find("oxygenBar").GetComponent<OxygenBar>();
         
@@ -69,6 +73,11 @@ public class PlayerController : MonoBehaviour
             coins += 1;
             PermanenttUI.perm.coins += 1;
             PermanenttUI.perm.coinsText.text = PermanenttUI.perm.coins.ToString();
+        }
+         else if (collision.tag =="O2")
+        {
+            oxygenBar.ResetOxygen();
+            Destroy(collision.gameObject);
         }
         if(collision.tag =="PowerUp")
         {
@@ -216,6 +225,7 @@ public class PlayerController : MonoBehaviour
         jumpForce = 10;
         GetComponent<SpriteRenderer>().color = Color.white;
     }
+
 
 }
 
