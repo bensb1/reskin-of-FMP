@@ -57,8 +57,5 @@ public class OxygenBar : MonoBehaviour
  
     }
 
-    internal void ResetOxygen()
-    {
-        slider.value = maxOxygen;
-    }
+
 }

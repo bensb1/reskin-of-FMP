@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
         }
          else if (collision.tag =="O2")
         {
-            oxygenBar.ResetOxygen();
+            oxygenBar.OxygenReset();
             Destroy(collision.gameObject);
         }
         if(collision.tag =="PowerUp")
@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene("FirstLevel");
             PermanenttUI.perm.health = 5;
 
-            oxygenBar.ResetOxygen();
+            oxygenBar.OxygenReset();
                 
             
         }

@@ -43,7 +43,7 @@ public class lava : MonoBehaviour
                 
                     
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                    oxygenBar.ResetOxygen();
+                    oxygenBar.OxygenReset();
                 
                 
             }
