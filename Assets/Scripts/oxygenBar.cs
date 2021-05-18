@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class OxygenBar : MonoBehaviour
 {
@@ -40,9 +41,20 @@ public class OxygenBar : MonoBehaviour
         }
         else if (currentOxygen - amount <= 0)
         {
-            Debug.Log(" not enough oxygen");
+            if (PermanenttUI.perm.health > 0)
+                PermanenttUI.perm.health -= 1;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            OxygenReset();
+               if (PermanenttUI.perm.health <= 0 )
+            {
+                SceneManager.LoadScene("FirstLevel");
+                PermanenttUI.perm.health = 5;
+            }
+
+
+
         }
-      
+ 
     }
 
     internal void ResetOxygen()
