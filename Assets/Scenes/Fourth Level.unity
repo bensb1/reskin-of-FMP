@@ -2610,6 +2610,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: star 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9060076237771314370, guid: 5fdc555ea3201d7489553d061724b524,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060076237771314370, guid: 5fdc555ea3201d7489553d061724b524,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.7103806
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060076237771314370, guid: 5fdc555ea3201d7489553d061724b524,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.014017105
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060076237771314370, guid: 5fdc555ea3201d7489553d061724b524,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.8043022
+      objectReference: {fileID: 0}
     - target: {fileID: 9060076237771314371, guid: 5fdc555ea3201d7489553d061724b524,
         type: 3}
       propertyPath: sceneName
@@ -9658,7 +9678,7 @@ PrefabInstance:
     - target: {fileID: 3941140117613643402, guid: 05633c3b7487f5d4594876b67dde02e3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3941140117613643402, guid: 05633c3b7487f5d4594876b67dde02e3,
         type: 3}
