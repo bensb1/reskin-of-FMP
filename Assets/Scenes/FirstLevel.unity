@@ -2396,12 +2396,6 @@ Transform:
   m_Father: {fileID: 1558298929}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1040358952 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 463294547, guid: 8e68db6244e28a3409b1f0f5d80405ba,
-    type: 3}
-  m_PrefabInstance: {fileID: 301000719}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1054640152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14873,11 +14867,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8814821525280409961, guid: 04cc883e104a48343b351ac9f43c7ae3,
-        type: 3}
-      propertyPath: footstep
-      value: 
-      objectReference: {fileID: 1040358952}
     - target: {fileID: 8814821525280409961, guid: 04cc883e104a48343b351ac9f43c7ae3,
         type: 3}
       propertyPath: healthAmount
