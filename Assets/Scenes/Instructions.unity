@@ -307,8 +307,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28.9, y: -25.964}
-  m_SizeDelta: {x: 485.2202, y: 259.0711}
+  m_AnchoredPosition: {x: 37, y: 32.036}
+  m_SizeDelta: {x: 576.20605, y: 304.07153}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &954071120
 MonoBehaviour:
@@ -345,8 +345,10 @@ MonoBehaviour:
   m_Text: "To move the player: Use WASD or the Arrow Keys.\nTo jump:  Use the Space
     Bar. \nYour goal: Collect the star at the end of each level to move onto the
     next one and get to the end of the game before the lava catches up to you.\nIf
-    the lava does catch up to you then you will lose health.\nIf you lose all your
-    health then you will go back to the first level."
+    the lava does catch up to you then you will lose health and the level will reset.\nWatch
+    out for your O2 bar going down. Replenish it by collecting oxygen tanks. If you
+    don't, you will lose health and the level will reset. \nIf you lose all your
+    health then you will go back to the very first level."
 --- !u!222 &954071121
 CanvasRenderer:
   m_ObjectHideFlags: 0
