@@ -209,6 +209,7 @@ public class PlayerController : MonoBehaviour
         {
             //Moving
             state = State.running;
+
         }
     else
         {
