@@ -2210,7 +2210,7 @@ PrefabInstance:
     - target: {fileID: 167336975980826996, guid: fa98325cfc352fa4d92d40c4e422655f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 167336975980826996, guid: fa98325cfc352fa4d92d40c4e422655f,
         type: 3}
@@ -4748,26 +4748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: oxygen tank (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 5828804865508487814, guid: 82b4e09fd69ba66429e2a85a868f0c8c,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: bdeaf0f7d8142574abd24658b249dab1,
-        type: 3}
     - target: {fileID: 5828804865508487815, guid: 82b4e09fd69ba66429e2a85a868f0c8c,
         type: 3}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5828804865508487815, guid: 82b4e09fd69ba66429e2a85a868f0c8c,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5828804865508487815, guid: 82b4e09fd69ba66429e2a85a868f0c8c,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5828804865508487815, guid: 82b4e09fd69ba66429e2a85a868f0c8c,
         type: 3}
@@ -9149,26 +9133,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1491601083}
     m_Modifications:
-    - target: {fileID: 7170382527177057960, guid: e50722c7a055ffc43b8d7ed80a418d13,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 835f01fb7d4487c46b6d485e23bf1adb,
-        type: 3}
     - target: {fileID: 7170382527177057963, guid: e50722c7a055ffc43b8d7ed80a418d13,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7170382527177057963, guid: e50722c7a055ffc43b8d7ed80a418d13,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7170382527177057963, guid: e50722c7a055ffc43b8d7ed80a418d13,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7170382527177057963, guid: e50722c7a055ffc43b8d7ed80a418d13,
         type: 3}
